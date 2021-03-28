@@ -14,3 +14,21 @@ Steg-för-steg:
 10. Öva på att loopa igenom tasks så att vi kan lägga till fler tasks.
 11. Varje task utgår alltid ifrån samma värden för first och second.
 */
+var fs = require('fs');
+var path = require('path');
+
+const dataJobs = './data.json';
+var { calculate } = JSON.parse(fs.readFileSync(path.resolve(__dirname, dataJobs), 'utf-8'));
+
+let queryOne = calculate.first;
+console.log(queryOne);
+let queryTwo = calculate.second;
+console.log(queryTwo);
+
+//let multiply = 
+
+let taskOne = calculate.task[0].name;
+console.log(taskOne);
+
+console.log('results from' + taskOne); 
+//let firstOutput = query.
