@@ -25,16 +25,17 @@ console.log(queryOne); // 10
 let queryTwo = calculate.second;
 console.log(queryTwo); // 5
 
-//let multiply = 
-
 let taskOne = calculate.task[0].name;
 console.log(taskOne);
 
-console.log('results from' + taskOne); 
+console.log('results from ' + taskOne); 
 //let firstOutput = query.
 
+//array output
 calculate.task.forEach(task => {
-    console.log(task)
+var taskArray = [];
+taskArray.push(task);
+console.log(taskArray);
 })
 
 console.log('results from ' + taskOne + ' is'); 
