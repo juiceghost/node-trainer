@@ -21,9 +21,9 @@ const dataJobs = './data.json';
 var { calculate } = JSON.parse(fs.readFileSync(path.resolve(__dirname, dataJobs), 'utf-8'));
 
 let queryOne = calculate.first;
-console.log(queryOne);
+console.log(queryOne); // 10
 let queryTwo = calculate.second;
-console.log(queryTwo);
+console.log(queryTwo); // 5
 
 //let multiply = 
 
@@ -37,3 +37,5 @@ calculate.task.forEach(task => {
     console.log(task)
 })
 
+console.log('results from ' + taskOne + ' is'); 
+//let firstOutput = query.
