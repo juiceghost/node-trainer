@@ -1,0 +1,17 @@
+{
+    "calculate": {
+        "first": "10",
+        "second": "5",
+        "task": [
+            {
+                "name": "add"
+            },
+            {
+                "name": "multiply"
+            },
+            {
+                "name": "divide"
+            }
+        ]
+    }
+}
