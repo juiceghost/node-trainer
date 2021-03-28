@@ -32,3 +32,8 @@ console.log(taskOne);
 
 console.log('results from' + taskOne); 
 //let firstOutput = query.
+
+calculate.task.forEach(task => {
+    console.log(task)
+})
+
