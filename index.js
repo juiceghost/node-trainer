@@ -38,5 +38,13 @@ taskArray.push(task);
 console.log(taskArray);
 })
 
-console.log('results from ' + taskOne + ' is'); 
-//let firstOutput = query.
+function add(queryOne, queryTwo) {
+    addResult = queryOne + queryTwo;
+}
+add(5, 10);
+
+
+console.log('results from ' + taskOne + ' is ' + addResult); // will put out 15
+
+//looping
+
