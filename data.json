@@ -2,7 +2,7 @@
     "calculate": {
         "first": "10",
         "second": "5",
-        "task": [
+        "tasks": [
             {
                 "name": "add"
             },

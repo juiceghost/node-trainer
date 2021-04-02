@@ -25,16 +25,20 @@ console.log(queryOne); // 10
 let queryTwo = calculate.second;
 console.log(queryTwo); // 5
 
-let taskOne = calculate.task[0].name;
+let taskOne = calculate.tasks[0].name;
 console.log(taskOne);
 
 console.log('results from ' + taskOne); 
 //let firstOutput = query.
+for (var property in calculate.tasks) {
+    console.log(property, ':',calculate.tasks[property]);
+}
+
 
 //array output
-calculate.task.forEach(task => {
+calculate.tasks.forEach(tasks => {
 var taskArray = [];
-taskArray.push(task);
+taskArray.push(tasks);
 console.log(taskArray);
 })
 
@@ -42,6 +46,9 @@ function add(queryOne, queryTwo) {
     addResult = queryOne + queryTwo;
 }
 add(5, 10);
+
+// looping
+
 
 
 console.log('results from ' + taskOne + ' is ' + addResult); // will put out 15
