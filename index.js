@@ -29,11 +29,19 @@ let taskOne = calculate.tasks[0].name;
 console.log(taskOne);
 
 console.log('results from ' + taskOne); 
-//let firstOutput = query.
-for (var property in calculate.tasks) {
-    console.log(property, ':',calculate.tasks[property]);
-}
 
+
+// looping
+//for (var property in calculate.tasks) {
+  //  console.log(property, ':',calculate.tasks[property]);
+//}
+
+//sum two objects
+var obj = {};
+Object.keys(queryOne).forEach(function(a) {
+    obj[a] = queryOne[a] + queryTwo[a]
+})
+console.log(obj);
 
 //array output
 calculate.tasks.forEach(tasks => {
@@ -47,11 +55,6 @@ function add(queryOne, queryTwo) {
 }
 add(5, 10);
 
-// looping
+console.log('results from ' + taskOne + ' is ' + obj); // will put out 15
 
-
-
-console.log('results from ' + taskOne + ' is ' + addResult); // will put out 15
-
-//looping
 
